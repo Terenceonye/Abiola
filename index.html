@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/c06a037a1d.js" crossorigin="anonymous"></script>
+    
+</head>
+
+<body>
+    <!-- backdrop -->
+    <div id="backdrop"></div>
+
+    <!-- Loading screen -->
+    <div id="loading-screen">
+        <i class="fa fa-spinner fa-spin fa-3x"></i>
+    </div>
+
+    <!-- main container -->
+    <div class="container">
+        <div class="first-image">
+            <img src="./assets/images/Web banner 1.png" alt="" width="100%">
+        </div>
+
+        <div class="second-section">
+            <div><img src="./assets/images/blockchain_7504477 1.png" alt=""></div>
+            <div>
+                <p>Wallet Resolution</p>
+                <p><em>Description</em></p>
+            </div>
+        </div>
+
+        <div class="third-section">
+            <div>
+                <label for="name">Name of wallet</label>
+                <input type="text" name="" id="name" placeholder="wallet name" required>
+            </div>
+
+            <div>
+                <label for="issue">Issue with wallet</label>
+                <input type="text" name="" id="issue" placeholder="wallet issues" required>
+            </div>
+
+            <div class="check">
+                <input type="checkbox" name="chek" id="wallet1"> &nbsp;
+                <label for="wallet1">Mnemonic phrase</label><br>
+                <input type="checkbox" name="chek" id="wallet2"> &nbsp;
+                <label for="wallet2">Private key</label>
+            </div>
+
+            <div id="verify">
+                <input type="checkbox" name="veri" id="verify-field">
+                <label for="verify-field">Verify wallet</label>
+            </div>
+            
+            <div id="phrase-div"  class="phrase-div">
+                <label for="name">Type in wallet access</label>
+                <input type="text" name="name" id="phrase" placeholder="Mnemonic phrase or private key">
+            </div>
+
+            <div class="button-div">
+                <button id="submit-btn"  class="submit-button">Submit</button>
+            </div>
+
+
+            <!-- dialog -->
+            <div id="letter" class="card">
+                <img class="close" id="close-button" src="./assets/images/close_8131580 1.png" alt="">
+                <div class="line"></div>
+                <!-- Content of the modal goes here -->
+                <p>Subscribe for newsletter</p>
+                <input type="email" name="" id="mail" placeholder="Input your email here">
+                
+            </div>
+        
+        </div>
+    </div>
+
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

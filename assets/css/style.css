@@ -1,0 +1,283 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem 0;
+    background: radial-gradient(63.87% 49.19% at 51.17% 48.16%, #FFA4E2 22.1%, #8C55B1 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+.container {
+    width: 700px;
+    max-width: 95%;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.first-image {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.first-image img {
+    border-radius: 15px;
+}
+
+
+.second-section {
+    /* position: relative; */
+    height: fit-content;
+    background: #3B2E38;
+    padding: 15px;
+    border-radius: 15px;
+    column-gap: 15px;
+
+    color: #ffffff;
+
+    display: flex;
+
+    padding-left: 9vw;
+    align-items: center;
+}
+
+.second-section img {
+    width: 50px;
+}
+
+.second-section p {
+    margin: 0;
+}
+
+.second-section p:nth-child(1) {
+    font-size: 22px;
+}
+
+.second-section p:nth-child(2) {
+    font-style: italic;
+    font-size: 14px;
+}
+
+
+
+.third-section {
+    height: fit-content;
+    background: #3B2E38;
+    padding: 1rem 3vw;
+    border-radius: 15px;
+    column-gap: 15px;
+    color: #ffffff;
+}
+
+.third-section div {
+    margin: 1rem 0;
+}
+
+.third-section input[type="text"] {
+    display: block;
+}
+
+input[type='text'],
+.check {
+    background-color: #30282D;
+    border: none;
+    padding: 1rem 0.7rem;
+    width: 100%;
+    border-radius: 7px;
+    margin-top: 5px;
+    color: white;
+}
+
+#verify {
+    background-color: #30282D;
+    border: none;
+    padding: .5rem 1.5rem;
+    border-radius: 7px;
+    margin-top: 5px;
+    width: fit-content;
+    margin: auto;
+
+    cursor: pointer;
+}
+
+
+.button-div {
+    margin-top: 40rem;
+}
+
+.submit-button {
+    background: linear-gradient(90deg, #A372D6 0%, #7662C3 100%);
+    padding: .8rem 6rem;
+    border-radius: 10px;
+
+    border: none;
+    width: fit-content;
+    margin: auto;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+input[type='text']:focus {
+    border: 1px solid #8C55B1;
+}
+
+input[type=checkbox] {
+    accent-color: #8C55B1;
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 1px solid #A372D6;
+}
+
+
+/* DIALOG CSS START */
+.card {
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem .5rem 4rem .5rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #30282D;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Add a shadow */
+    width: min(400px, calc(50% + 80px));
+    min-width: 330px;
+
+    z-index: 9997;
+
+
+}
+
+.card .line {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: .5vw;
+
+    z-index: 9998;
+
+    background-color: #88199A;
+    margin: 0;
+
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.card p {
+    color: white;
+    font-size: 20px;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-wrap: nowrap;
+
+}
+
+input[type='email'] {
+    background-color: #30282D;
+    padding: .5rem;
+    border: none;
+    border-bottom: 2px solid #7D7D7D;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color: white;
+
+}
+
+input[type='email']::placeholder {
+    text-align: center;
+    font-size: 17px;
+    color: #989898;
+}
+
+input[type='email']:focus {
+    outline: none;
+}
+
+
+.close {
+    position: absolute;
+    top: -12px;
+    right: -2px;
+    z-index: 9999;
+    display: inline;
+
+    /* background-color: transparent; */
+    border: none;
+    width: 33px;
+
+
+}
+
+#letter {
+    display: none;
+
+}
+
+
+#backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(97, 87, 93, 0.8);
+    display: none;
+    z-index: 100;
+}
+
+.phrase-div {
+    /* display: none; */
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+        /* Smooth transition */
+}
+
+.visible {
+    height: auto;
+    opacity: 1;
+    padding: 10px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+  /* Style for the loading screen */
+  #loading-screen {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    background-color: rgba(97, 87, 93, 0.8);
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      color: #ffffff;
+  }
